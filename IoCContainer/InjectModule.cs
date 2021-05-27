@@ -11,18 +11,6 @@ namespace IoCContainer
         void Bind(Type t1, Type t2);
     }
 
-    internal class Binding
-    {
-        public Type Target { get; set; }
-        public Type Value { get; set; }
-
-        public Binding(Type target, Type value)
-        {
-            Target = target;
-            Value = value;
-        }
-    }
-
     public abstract class InjectModule
     {
         internal List<Type> Targets { get; private set; }
